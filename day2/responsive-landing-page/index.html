@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <div id="green"></div>
+    <div id="image"></div>
+    <div>
+        <h1 id="h1">LANDING PAGE</h1>
+        <h2 id="h2">HIKING</h2>
+    </div>
+    <div id="card-container">
+        <div class="card">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="images/log.png" alt="Logo">
+                </div>
+                <button class="hamburger">
+                    Menu
+                </button>
+                <div class="toggle">
+                    <ul class="mobile-nav">
+                        <a href="#">Home</a>
+                        <a href="#">UPCOMING TREKS</a>
+                        <a href="#">ABOUT</a>
+                        <a href="#">CONTACT</a>
+                    </ul>
+                    <div class="mobile-contact">
+                        <hr>
+                        <a href="#">CALL NOW<br>1800 888 555</a>
+                    </div>
+                    <button class="close-btn">⚔️</button>
+                </div>
+                <ul class="nav-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">UPCOMING TREKS</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <div class="contact">
+                    <a href="#">CALL NOW<br>1800 888 555</a>
+                </div>
+            </nav>
+            <div class="content-container">
+                <div class="heading-container">
+                    <h1 class="left-heading">I WANT<br> TO GO<br> HIKING</h1>
+                    <div class="vertical-line"></div>
+                    <h1 class="right-heading">GET <br>OUT<br> NOW</h1>
+                </div>
+                <img src="images/final_pic.png" alt="Hiking Adventure" class="right-image">
+            </div>
+            <button class="button">GET STARTED</button>
+            <div class="logo-text-container">
+                <img src="images/unnamed-Photoroom.png" alt="Small Logo" class="small-logo">
+                <p class="logo-text">JOIN US FOR THE WEEKEND TO CLIMB<br>THE HIGHEST PEAK IN ENGLAND</p>
+            </div>
+            <div class="footer-container">
+                <p class="footer-text">@company name 2020 All Rights Reserved</p>
+                <div class="social-media">
+                    <img src="images/41e457e8599833299d563976b7d3c59a.jpg" alt="Instagram">
+                    <img src="images/facebook.png" alt="Facebook">
+                    <img src="images/twitter.png" alt="Twitter">
+                    <img src="images/whatsapp.png" alt="WhatsApp">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const closeBtn = document.querySelector('.close-btn');
+
+        hamburger.addEventListener('click', function () {
+            toggle.classList.toggle('active');
+        });
+
+        closeBtn.addEventListener('click', function () {
+            toggle.classList.remove('active');
+        });
+    </script>
+</body>
+
+</html>
