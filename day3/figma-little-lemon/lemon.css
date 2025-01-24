@@ -274,7 +274,7 @@ body {
   display: flex;
   width: 1110px;
   height: auto;
-  margin: 0 auto 50px auto; 
+  margin: 0 auto 50px auto;
   padding: 70px 70px 8px 70px;
   gap: 125px;
 }
@@ -283,8 +283,6 @@ body {
   margin: 0;
   width: 445px;
   height: auto;
-
-  
 }
 
 .frameiv-heading {
@@ -300,66 +298,66 @@ body {
 }
 
 .frameiv-p {
-    width: auto;
-    height: 120px;
-    padding-top: 30px;
-    margin: 0 auto;
-    font-family: "SF Pro Display", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: black;
+  width: auto;
+  height: 120px;
+  padding-top: 30px;
+  margin: 0 auto;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
 }
 .form-container {
-    margin-left: auto;
-    width: 280px; 
-    height: auto; 
-    padding: 24px 32px;
-    border-radius: 16px;
-    background-color: #8158ec; 
-    color: white;
-    box-shadow: 10px 10px rgb(0, 0, 0);
-  }
-  
+  margin-left: auto;
+  width: 280px;
+  height: auto;
+  padding: 24px 32px;
+  border-radius: 16px;
+  background-color: #8158ec;
+  color: white;
+  box-shadow: 10px 10px rgb(0, 0, 0);
+}
+
 h2 {
-    font-size: 20px;
-    margin-bottom: 16px;
+  font-size: 20px;
+  margin-bottom: 16px;
 }
-  
+
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 4px; 
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
-  
+
 label {
-    font-size: 14px;
-    color: #ffc926;
-    font-weight: bold;
-    margin-bottom: 0.1px; 
-    display: block; 
+  font-size: 14px;
+  color: #ffc926;
+  font-weight: bold;
+  margin-bottom: 0.1px;
+  display: block;
 }
-  
+
 input,
 textarea {
-    width: 100%;
-    padding: 4px;
-    border: none;
-    border-bottom: 2px solid #ffc926;
-    background-color: transparent;
-    color: white;
-    font-size: 14px;
-    margin-top: 0; 
+  width: 100%;
+  padding: 4px;
+  border: none;
+  border-bottom: 2px solid #ffc926;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  margin-top: 0;
 }
-  
+
 input::placeholder,
 textarea::placeholder {
-    color: white;
-    opacity: 0.8;
+  color: white;
+  opacity: 0.8;
 }
-  
+
 textarea {
-    resize: none;
+  resize: none;
 }
 
 .checkbox-container {
@@ -369,7 +367,6 @@ textarea {
   width: 216px;
   height: auto;
   gap: 12px;
-  
 }
 
 #text-consent {
@@ -377,14 +374,13 @@ textarea {
   height: 18px;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #E1D7FB;
+  background-color: #e1d7fb;
 }
-
 
 .checkbox-container label {
   font-size: 12px;
   line-height: 17px;
-  color:white;
+  color: white;
   margin: 0;
   font-weight: 400;
 }
@@ -396,7 +392,7 @@ textarea {
   height: 580px;
 }
 
-.footer-size{
+.footer-size {
   width: 1440px;
   height: 539px;
   justify-content: center;
@@ -409,7 +405,6 @@ textarea {
   border-bottom: 1px solid #333;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  
 }
 
 .footer-column {
@@ -433,7 +428,7 @@ textarea {
   font-family: "SF Pro Display", sans-serif;
   font-size: 12px;
   line-height: 14px;
-  color: #B8A1F5;
+  color: #b8a1f5;
   margin-top: 38px;
   letter-spacing: 10%;
 }
@@ -441,7 +436,7 @@ textarea {
 .footer-column ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0; 
+  margin: 10px 0;
 }
 
 .footer-column ul li {
@@ -459,24 +454,191 @@ textarea {
   text-decoration: none;
 }
 
-
 .footer-bottom {
-  font-family: inder,sans-serif;
+  font-family: inder, sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-links a {
-  font-family: inder,sans-serif;
+  font-family: inder, sans-serif;
   color: #ccc;
   margin-right: 15px;
   text-decoration: none;
   font-size: 14px;
 }
 
-
 .app-links img {
   height: 40px;
   margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar {
+    margin: 0;
+    padding: 15px;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .sign-button {
+    margin: 10px auto;
+    padding: 0;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .framei {
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 40px 40px 5px 40px;
+    margin: 10px;
+  }
+
+  .framei-heading {
+    font-size: 28px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .framei-para {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .framei-button {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .framei-image {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .frameii-heading, .frameiii-heading {
+    font-size: 28px;
+    padding: 15px;
+  }
+
+  .frameii-para, .frameiii-para {
+    width: 85%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .frameiii-services {
+    width: 90%;
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .frameiii-services-i, .frameiii-services-ii {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .frameiv {
+    width: 85%;
+    padding: 15px;
+  }
+
+  .frameiv-head {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-container {
+    width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 20px;
+    height: auto;
+  }
+
+  .footer-size {
+    width: auto;
+    height: auto;
+  }
+
+  .footer-content {
+    padding: 2px;
+    text-align: left;
+  }
+
+  .footer-column {
+    margin: 2px 0;
+    width: auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .app-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+   
+  }
+  
+  .footer-column ul li {
+    font-family: "SF Pro Display", sans-serif;
+    width: auto;
+    height: auto;
+    margin-bottom: 6px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .footer-column {
+    flex: 0;
+   
+  }
+  
+  .footer-column h3 {
+    font-size: 12px;
+    font-family: "SF Pro Display", sans-serif;
+    line-height: 22px;
+    font-weight: 700;
+    color: #ffc107;
+    margin-bottom: 1px;
+  }
+  
+  .footer-column h4 {
+    width: 202px;
+    height: 12px;
+    font-weight: 700;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #b8a1f5;
+    margin-top: 28px;
+    letter-spacing: 10%;
+  }
 }
