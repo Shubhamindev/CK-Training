@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./array.js"></script>
+</head>
+<body>
+    <h1>Array Manipulation</h1>
+   
+
+    <label for="numberInput">Enter a number:</label>
+    <input type="text" id="numberInput" placeholder="Enter number" />
+    <button onclick="addNumberToArray()">Add Number</button>
+    <br><br>
+
+
+    <label for="indexInput">Enter index:</label>
+    <input type="number" id="indexInput" placeholder="Enter index" />
+    <button onclick="insertNumberAtIndex()">Insert Number at Index</button>
+    <br><br>
+    <label for="numberToFind">Enter a number to find its index:</label>
+    <input type="number" id="numberToFind">
+    <button onclick="find()">Find Index</button>
+    <br><br>
+    <label for="oldNumberInput">Enter number to replace:</label>
+    <input type="text" id="oldNumberInput" placeholder="Enter number to replace" />
+    <label for="newNumberInput">Enter new number:</label>
+    <input type="text" id="newNumberInput" placeholder="Enter new number" /> 
+    <button onclick="replaceNumber()">Replace Number</button>
+    <br><br>
+
+    <div>
+        <button onclick="removeFirstNumber()">Remove First Number</button>
+    </div>
+     <br>
+    <button onclick="sort()">Sort Array</button>
+<br> <br>
+    <button onclick="reverse()">Reverse Array</button>
+
+    <p id="arrayDisplay">Updated Array: </p>
+
+    <br><br>
+    <p id="findindex">Index of : </p>
+</body>
+</html>
