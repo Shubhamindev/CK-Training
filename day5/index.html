@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="todo.js"></script>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="header">
+        <h1>TODO</h1>
+    </div>
+    <div class="input">
+        <textarea type="text" id="todoInput"></textarea>
+        <button class="addButton" onclick="addTodo()">Add</button>
+    </div>
+    <div class="card">
+    <div class="filter">
+        <button class="clearButton" onclick="clearFilter()">Clear</button>
+        <div class="dropdown">
+            <button class="filterButton" onclick="toggleDropdown()">Filters</button>
+            <div id="filterDropdown" class="dropdown-content">
+                <button onclick="filterAll()">All</button>
+                <button onclick="filterActive()">Active</button>
+                <button onclick="filterCompleted()">Completed</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="plate">
+        <ol id="todoList">
+        </ol>
+    </div>
+
+</body>
+</html>
