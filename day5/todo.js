@@ -7,9 +7,9 @@ function addTodo() {
         alert('Please enter a todo');
         return;
     }
+    let localTodos = JSON.parse(localStorage.getItem('todos')) || [];
     localTodos.push(todo);
     localStorage.setItem('todos', JSON.stringify(localTodos));
-    let localTodos = JSON.parse(localStorage.getItem('todos')) || [];
     document.getElementById('todoInput').value = '';
     displayTodos();
 }
@@ -27,7 +27,6 @@ function toggleDropdown() {
     var dropdownContent = document.getElementById('filterDropdown');
     dropdownContent.style.display = (dropdownContent.style.display === "none" || dropdownContent.style.display === "") ? "block" : "none";
 }
-
 function filterAll() {
     displayTodos();
 }
@@ -46,7 +45,7 @@ function displayTodos() {
                 completedTodos.push(todo);
                 localStorage.setItem('completedTodos', JSON.stringify(completedTodos));
             } else {
-                todos.splice(0, 1);
+                todos.splice(index, 1);
                 localStorage.setItem('todos', JSON.stringify(todos));
                 completedTodos = completedTodos.filter(t => t !== todo);
                 localStorage.setItem('completedTodos', JSON.stringify(completedTodos));
@@ -77,7 +76,6 @@ function filterCompleted() {
     });
 }
 
-
 function filterActive() {
     var todoList = document.getElementById('todoList');
     todoList.innerHTML = '';
@@ -107,3 +105,4 @@ function clearFilter() {
 }
 
 window.onload = displayTodos;
+
