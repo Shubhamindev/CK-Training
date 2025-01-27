@@ -61,3 +61,13 @@ function updateTable() {
     tableBody.appendChild(row);
   }
 }
+
+function retrieveStudentData() {
+  var savedStudents = localStorage.getItem("students");
+  if (savedStudents) {
+    students = JSON.parse(savedStudents);
+    updateTable();
+  }
+}
+window.onload = retrieveStudentData;
+
