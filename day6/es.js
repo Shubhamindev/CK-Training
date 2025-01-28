@@ -12,3 +12,20 @@ console.log(greet("Shubham"));
 console.log(greet("Annu", "Hello")); 
 
 
+//3
+const formatString = (name, age) => {
+  return `Hello, my name is ${name} and I am ${age} years old.`;
+}
+console.log(formatString("shubham",20));
+
+//4
+
+const person = {
+    name: 'Alice',
+    age: 25,
+    city: 'New York'
+};
+
+const{name,city} = person;
+
+#5
