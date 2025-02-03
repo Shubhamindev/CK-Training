@@ -17,3 +17,10 @@
 ``` cat > file1.txt ```
 
 ![image](https://github.com/user-attachments/assets/fd6ab27c-b9ad-48fe-861b-f329c41bbdec)
+
+### 4 Find a "passwd" file using find command inside /etc. copy this files as passwd_copy and then rename this file as passwd_backup.
+
+``` sudo find /etc -name "passwd" -exec cp {} /etc/passwd_copy \; -exec mv /etc/passwd_copy /etc/passwd_backup \```
+
+![image](https://github.com/user-attachments/assets/3321f952-1fb2-4359-995f-b2d9e0e3d2a0)
+
