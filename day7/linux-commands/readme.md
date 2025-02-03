@@ -64,6 +64,13 @@
 ![image](https://github.com/user-attachments/assets/815196d1-fe2a-4d04-8f86-d8dd698c7357)
 
 
+### Create a "test" user,create its password and find out its uid and gid.
+
+``` sudo passwd test ```
+``` id test ```
+``` getent passwd test ```
+
+![image](https://github.com/user-attachments/assets/9023cfe4-4cb0-4ff6-a220-0ea143d1efdf)
 
 
 
