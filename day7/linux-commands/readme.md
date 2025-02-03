@@ -50,12 +50,12 @@
 ![image](https://github.com/user-attachments/assets/658b12ee-01fb-4d3c-af66-4636299a3873)
 
 
-### Find out the number of line in password_backup containing "/bin/false".
+### 6 Find out the number of line in password_backup containing "/bin/false".
 
 ``` grep -c "/bin/false" /etc/passwd_backup ```
 ![image](https://github.com/user-attachments/assets/e1ccdd38-ffc5-4823-acfa-358be013e909)
 
-### Get the first 5 lines of a file “password_backup” and  Redirect the output of the above commands into file "output". Also, get the lines 6-10 from the above file.
+### 7 Get the first 5 lines of a file “password_backup” and  Redirect the output of the above commands into file "output". Also, get the lines 6-10 from the above file.
 
 ``` head -n 5 /etc/passwd_backup > output``` 
 ``` tail -n +6 /etc/passwd_backup | head -n 5 >> output ```
@@ -64,7 +64,7 @@
 ![image](https://github.com/user-attachments/assets/815196d1-fe2a-4d04-8f86-d8dd698c7357)
 
 
-### Create a "test" user,create its password and find out its uid and gid.
+### 8 Create a "test" user,create its password and find out its uid and gid.
 
 ``` sudo passwd test ```
 ``` id test ```
@@ -73,4 +73,8 @@
 ![image](https://github.com/user-attachments/assets/9023cfe4-4cb0-4ff6-a220-0ea143d1efdf)
 
 
+### 9 Change the timestamp of  emptyFile1, emptyFile2 which are exist in dir2
 
+```touch -t 202502031630 dir2/emptyFile1 dir2/emptyFile2```
+
+![image](https://github.com/user-attachments/assets/fe8d99c7-8a9c-4acc-ae58-3f46cdd42ea0)
