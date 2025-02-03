@@ -55,4 +55,15 @@
 ``` grep -c "/bin/false" /etc/passwd_backup ```
 ![image](https://github.com/user-attachments/assets/e1ccdd38-ffc5-4823-acfa-358be013e909)
 
+### Get the first 5 lines of a file “password_backup” and  Redirect the output of the above commands into file "output". Also, get the lines 6-10 from the above file.
+
+``` head -n 5 /etc/passwd_backup > output``` 
+``` tail -n +6 /etc/passwd_backup | head -n 5 >> output ```
+``` cat output ```
+
+![image](https://github.com/user-attachments/assets/815196d1-fe2a-4d04-8f86-d8dd698c7357)
+
+
+
+
 
