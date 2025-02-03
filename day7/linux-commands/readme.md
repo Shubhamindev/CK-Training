@@ -50,5 +50,9 @@
 ![image](https://github.com/user-attachments/assets/658b12ee-01fb-4d3c-af66-4636299a3873)
 
 
+### Find out the number of line in password_backup containing "/bin/false".
+
+``` grep -c "/bin/false" /etc/passwd_backup ```
+![image](https://github.com/user-attachments/assets/e1ccdd38-ffc5-4823-acfa-358be013e909)
 
 
