@@ -13,3 +13,7 @@
 
 ![image](https://github.com/user-attachments/assets/65589945-dc6e-472f-bbee-832c0b6193a7)
 
+### 3 Create one file file1.txt containing text "hello world" and save it.
+``` cat > file1.txt ```
+
+![image](https://github.com/user-attachments/assets/fd6ab27c-b9ad-48fe-861b-f329c41bbdec)
