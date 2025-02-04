@@ -85,6 +85,21 @@
 ``` shubham ``` <br>
 ``` ls -l /tmp/aliastesting ```
 ![image](https://github.com/user-attachments/assets/bb922d3f-141e-4fed-9516-85134b25a58b)
+### Edit ~/.bashrc file such that when you change to "test" user it should clear the screen and print "Welcome".
+
+``` sudo adduser test ```
+To change the permission of test
+`chown test /home/test`
+change the user
+` su test `
+edit bashrc
+`nano .bashrc`
+` echo "Welcome" `
+save bashrc using ctrl + X,Y and enter
+update source
+` source .bashrc`
+
+![image](https://github.com/user-attachments/assets/232ec834-7820-40c9-88bc-55e1d49c5b17)
 
 ### 13 install zip
 `sudo apt instal zip`
