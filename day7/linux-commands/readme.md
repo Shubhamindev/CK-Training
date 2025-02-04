@@ -86,8 +86,12 @@
 ``` ls -l /tmp/aliastesting ```
 ![image](https://github.com/user-attachments/assets/bb922d3f-141e-4fed-9516-85134b25a58b)
 
-### 12 install zip
+### 13 install zip
 `sudo apt instal zip`
 ![image](https://github.com/user-attachments/assets/a7370cd8-8576-4bdc-9d3e-e629e19266d8)
 
 
+### 14 Compress "output" and "password_backup" files into a tar ball. List the files present inside the tar created.
+`tar -cvf tarball.tar /home/shubham/Desktop/output /home/shubham/Desktop/password_backup`
+
+### 15 
