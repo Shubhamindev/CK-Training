@@ -79,11 +79,15 @@
 
 ![image](https://github.com/user-attachments/assets/fe8d99c7-8a9c-4acc-ae58-3f46cdd42ea0)
 
-### 10  Create alias with your name so that it creates a file as "/tmp/aliastesting".
+### 11  Create alias with your name so that it creates a file as "/tmp/aliastesting".
 
 ``` alias shubham='touch /tmp/aliastesting' ``` <br>
 ``` shubham ``` <br>
 ``` ls -l /tmp/aliastesting ```
 ![image](https://github.com/user-attachments/assets/bb922d3f-141e-4fed-9516-85134b25a58b)
 
-### 11 
+### 12 install zip
+`sudo apt instal zip`
+![image](https://github.com/user-attachments/assets/a7370cd8-8576-4bdc-9d3e-e629e19266d8)
+
+
