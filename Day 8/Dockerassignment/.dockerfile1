@@ -1,0 +1,5 @@
+# Use official nginx image
+FROM nginx
+
+# Copy custom index.html to the nginx web root
+COPY index.html /usr/share/nginx/html/index.html
