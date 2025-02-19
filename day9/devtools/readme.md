@@ -37,6 +37,7 @@ sudo systemctl enable mongod
 
 # Setup Intellij Idea community on local and run a sample java application
 `sudo snap install intellij-idea-community --classic`
+![Screenshot from 2025-02-06 16-34-09](https://github.com/user-attachments/assets/e789892b-b996-4e21-a63b-ffadcd793423)
 
 # Setup VS Code and run HTML/CSS/JS assignment on VS Code
 `sudo snap install code --classic`
@@ -44,11 +45,12 @@ sudo systemctl enable mongod
 ![Screenshot from 2025-02-06 16-34-49](https://github.com/user-attachments/assets/21ab234a-c12b-4441-aaf4-ffbd90d17a54)
 
 # Setup Clipboard history tool Diodon
+`sudo apt update`<br>
+`sudo apt install diodon -y`
 
 ![Screenshot from 2025-02-06 16-41-15](https://github.com/user-attachments/assets/1fa4267e-5512-41b6-9c0f-4d990ce3bb9b)
 
 
-![Screenshot from 2025-02-06 16-34-09](https://github.com/user-attachments/assets/e789892b-b996-4e21-a63b-ffadcd793423)
 
 
 
