@@ -109,4 +109,11 @@ update source<br>
 ### 14 Compress "output" and "password_backup" files into a tar ball. List the files present inside the tar created.
 `tar -cvf tarball.tar /home/shubham/Desktop/output /home/shubham/Desktop/password_backup`
 
-### 15 
+### 15 scp this file to test user
+``` scp /home/shubham/Desktop bhavya@1.0.11.1:/home/bhavya/Desktop ```
+
+### 16 Help command
+``` MAN ```
+``` --help ```
+
+
