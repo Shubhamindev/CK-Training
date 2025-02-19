@@ -17,3 +17,11 @@ Delete specific image
 pull the docker  nginx
 ``` docker pull nginx  ```
 
+build ngnix image
+
+``` docker build -t nginx_helloworld ```
+
+Run the container
+
+``` docker run -d -p 8080:80 nginx_helloworld ```
+
