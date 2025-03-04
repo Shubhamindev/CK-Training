@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import FormConfig from "../FormConfig";
 export default function SignUp() {
+  const navigate = useNavigate();
+
 
   const { title, fields } = FormConfig.signup;
 
@@ -12,6 +14,7 @@ export default function SignUp() {
     }, {})
   );
 
+
   const handleChange = (e) => {
     const { name, type, value, checked } = e.target;
     setFormData({
@@ -19,8 +22,8 @@ export default function SignUp() {
       [name]: type === "checkbox" ? checked : value,
     });
   };
-
   const handleSubmit = (e) => {
+    e.preventDefault(); 
   
     try {
       const storedUsers = JSON.parse(localStorage.getItem("signupData")) || [];
@@ -32,18 +35,19 @@ export default function SignUp() {
           alert("Account already exists. Please login.");
           return;
         }
+  
         const updatedUsers = [...storedUsers, formData];
         localStorage.setItem("signupData", JSON.stringify(updatedUsers));
       } else {
         localStorage.setItem("signupData", JSON.stringify([formData]));
       }
-      
+  
       alert("Signup Successful!");
-      
+      navigate("/login"); 
+  
     } catch (error) {
       console.error("Signup failed:", error);
       alert("Signup Failed!");
-
     }
   };
   
