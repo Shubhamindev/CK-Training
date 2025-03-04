@@ -61,7 +61,7 @@ export default function About() {
           </p>
           <p className="text-gray-600 flex items-center gap-2 mt-2">
             <Linkedin className="text-blue-500" size={20} /> 
-            <a href="https://www.linkedin.com/in/shubham-kumar-2bb56622a/" target="_blank" className="hover:underline">
+            <a href="https://www.linkedin.com/in/shubham-kumar-2bb56622a/" className="hover:underline">
               Connect with us
             </a>
           </p>
