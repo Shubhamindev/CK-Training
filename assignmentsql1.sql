@@ -88,6 +88,18 @@ WHERE id NOT IN (
     SELECT DISTINCT department_id FROM employee WHERE department_id IS NOT NULL
 );
 
+SELECT e.employee_id, e.name AS employee_name, d.name AS department
+FROM employee e
+INNER JOIN department d ON e.department_id = d.id
+WHERE d.name IN ('Full Stack');
+
+SELECT d.name AS department_name, COUNT(e.id) AS employee_count
+FROM department d
+JOIN employee e ON d.id = e.department_id
+GROUP BY d.name
+ORDER BY employee_count DESC;
+
+
 
 
 
